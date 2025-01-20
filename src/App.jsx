@@ -10,42 +10,42 @@ function App() {
         name: 'Fresh Apples',
         description: 'Crisp and sweet red apples, perfect for snacking or baking.',
         price: 2.50,
-        image: '../assetsimages/apple.jpg',
+        image: 'src/assets/images/apple.jpg',
     },
     {
         id: 2,
         name: 'Bananas',
         description: 'Naturally ripened bananas with a smooth, creamy texture.',
         price: 1.20,
-        image: 'item1.jpg',
+        image: 'src/assets/images/banana.jpeg',
     },
     {
         id: 3,
         name: 'Whole Grain Bread',
         description: 'Soft and healthy bread made with 100% whole grains.',
         price: 3.99,
-        image: 'item1.jpg',
+        image: 'src/assets/images/bread.jpeg',
     },
     {
         id: 4,
         name: 'Farm Fresh Eggs',
         description: 'A dozen large, free-range eggs, rich in protein.',
         price: 4.50,
-        image: 'item1.jpg',
+        image: 'src/assets/images/eggs.jpeg',
     },
     {
         id: 5,
         name: 'Cheddar Cheese Block',
         description: 'A rich, sharp cheddar cheese, great for sandwiches and snacks.',
         price: 5.99,
-        image: 'item1.jpg',
+        image: 'src/assets/images/cheese.jpeg',
     },
     {
         id: 6,
         name: 'Chicken Breast',
         description: 'Boneless, skinless chicken breast, lean and tender.',
         price: 7.50,
-        image: 'item1.jpg',
+        image: 'src/assets/images/banana.jpeg',
     },
     {
         id: 7,
@@ -144,7 +144,14 @@ function App() {
         description: 'Medium roast ground coffee with a rich and aromatic flavor.',
         price: 7.49,
         image: 'item1.jpg',
-    }
+    },
+    {
+      id: 21,
+      name: 'Honey',
+      description: 'Pure, natural honey with a rich golden color, perfect for sweetening tea, baking, or drizzling over desserts.',
+      price: 6.49,
+      image: 'item1.jpg',
+  }
 ]
 
   return (
