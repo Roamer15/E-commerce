@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import ShoppingBasket from './basket.jsx'; // Import the new component
 
 function ItemLists(props) {
     const items = props.items
@@ -29,6 +30,7 @@ function ItemLists(props) {
         const itemCount = itemCounts.find((countItem) => countItem.id === item.id)?.count || 0;
 
         return (
+            <>
             <div className="item" key={item.id}>
                 <img src={`${item.image}`} alt={item.name} />
                 <h3>{item.name}</h3>
@@ -40,13 +42,19 @@ function ItemLists(props) {
                     <button id="remove" onClick={() => decrement(item.id)}>-</button>
                 </div>
             </div>
+        </>
         )
     })
+    
 
     return (
-        <div className="container">
+    <>
+     <div className="container">
             {listItems}
         </div>
+        <ShoppingBasket itemCounts={itemCounts} items={items} /> {/* Use ShoppingBasket */}
+    </>
+       
     )
 }
 

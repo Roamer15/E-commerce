@@ -10,7 +10,7 @@ function App() {
         name: 'Fresh Apples',
         description: 'Crisp and sweet red apples, perfect for snacking or baking.',
         price: 2.50,
-        image: 'src/assets/images/apple.jpg',
+        image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThFqP7p0I9BarcrpU3VBgeag4TP_HxhHGeug&s',
     },
     {
         id: 2,
@@ -24,14 +24,14 @@ function App() {
         name: 'Whole Grain Bread',
         description: 'Soft and healthy bread made with 100% whole grains.',
         price: 3.99,
-        image: 'src/assets/images/bread.jpeg',
+        image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZBigGWTZLAn4GUch5qJdjYy3zGMkcZosRdw&s',
     },
     {
         id: 4,
         name: 'Farm Fresh Eggs',
         description: 'A dozen large, free-range eggs, rich in protein.',
         price: 4.50,
-        image: 'src/assets/images/eggs.jpeg',
+        image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXag7lED3DDOFj9i3Nmsr_LfeGqQbJf0YnFg&s',
     },
     {
         id: 5,
@@ -136,21 +136,21 @@ function App() {
         name: 'Chocolate Bar (Dark)',
         description: 'Smooth and rich dark chocolate with 70% cocoa.',
         price: 2.99,
-        image: 'src/assets/images/chocolate.jpeg',
+        image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVK2e0185OQBVGC329GUaPdlIcaj5TH4Z74w&s',
     },
     {
         id: 20,
         name: 'Coffee (Ground)',
         description: 'Medium roast ground coffee with a rich and aromatic flavor.',
         price: 7.49,
-        image: 'src/assets/images/coffee.jpeg',
+        image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6wZqwsfgrazlg87dWwJeHAbLEXOboESy4ng&s',
     },
     {
       id: 21,
       name: 'Honey',
       description: 'Pure, natural honey with a rich golden color, perfect for sweetening tea, baking, or drizzling over desserts.',
       price: 6.49,
-      image: 'src/assets/images/knife.jpeg',
+      image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSanOFiTFmMqf3CescTJv-wzi8qaTZCKl-ngg&s',
   }
 ]
 
@@ -158,7 +158,9 @@ function App() {
     <>
       <Header />
         <h1 className="welcome-msg">Welcome To Shoopify!</h1>
+        <div className="lists">
         <ItemLists items={groceries} />
+        </div>
     </>
   )
 }
