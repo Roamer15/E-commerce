@@ -1,20 +1,21 @@
-function ItemLists(props) {
-
-    const category = props.category
-    const items = props.items
-
-    const listItems = items.map((item) => <div className="item" key={item.id}>
-                                          <img src={`images/${item.image}`} alt={item.name} />
-                                          <h3>{item.name}</h3>
-                                          <p>{item.description}</p>
-                                          <p>${item.price}</p>
-                                          </div>)
-
+function ItemLists({ product, onAddProduct }) {
+ 
     return (
-        <div className="container">
-            {listItems}
+       
+      <div className="item-list">
+        <img src={product.image} alt={product.name} />
+        <h2>{product.name}</h2>
+        <p>{product.description}</p>
+        <p className="price">${product.price}</p>
+        <div className="buttons">
+          <button className="add" onClick={() => onAddProduct(product.id, 1)}>
+            +
+          </button>
+          <button className="remove" onClick={() => onAddProduct(product.id, -1)}>
+            -
+          </button>
         </div>
+      </div>
     )
-}
-
-export default ItemLists
+  }
+  export default ItemLists;
