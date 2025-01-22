@@ -176,13 +176,7 @@ const [basket, setBasket] = useState([]);
   };
 
 
-//   return (
-//     <>
-//       <Header />
-//         <h1 className="welcome-msg">Welcome To Shoopify!</h1>
-//         <ItemLists items={groceries} category='Grocery'/>
-//     </>
-//   )
+ 
 return (
     <div className="main-container">
       <Header />
